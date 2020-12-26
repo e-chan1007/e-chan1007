@@ -1,4 +1,4 @@
-[![](https://raw.githubusercontent.com/e-chan1007/e-chan1007/main/profile-summary-card-output/nord_bright/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/e-chan1007/e-chan1007/main/profile-summary-card-output/nord_bright/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
 いーちゃん です。普通科高校 1 年生です。 <br />
 プログラミングは小学校から触れてきましたが、「いーちゃん」としての活動は SGG(すごくなりたいがくせいぐるーぷ) への参加をきっかけに 2020 年 5 月より開始しました。<br />
