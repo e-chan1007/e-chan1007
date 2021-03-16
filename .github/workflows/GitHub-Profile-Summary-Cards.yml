@@ -15,8 +15,8 @@ jobs:
         with:
           repository: e-chan1007/github-profile-summary-cards
           ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       
       - run: npm run run e-chan1007
         env: # default use ${{ secrets.GITHUB_TOKEN }}, you can change to your personal access token
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
