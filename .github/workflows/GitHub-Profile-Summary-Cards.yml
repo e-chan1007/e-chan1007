@@ -12,11 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          repository: e-chan1007/github-profile-summary-cards
-          ref: main
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-      - run: npm install
-      - run: npm run run e-chan1007
+      - uses: e-chan1007/github-profile-summary-cards@main
         env: # default use ${{ secrets.GITHUB_TOKEN }}, you can change to your personal access token
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
