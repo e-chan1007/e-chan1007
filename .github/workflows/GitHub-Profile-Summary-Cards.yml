@@ -12,7 +12,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: e-chan1007/github-profile-summary-cards@main
+      - name: Private actions checkout
+        uses: daspn/private-actions-checkout@v2
+        with:
+          actions_list: '["e-chan1007/github-profile-summary-cards@main"]'
+          checkout_base_path: ./.github/actions
+          app_id: ${{ secrets.APP_ID }}
+          app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: 'Using custom private action 1'
+        uses: ./.github/actions/github-profile-summary-cards
         env: # default use ${{ secrets.GITHUB_TOKEN }}, you can change to your personal access token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
