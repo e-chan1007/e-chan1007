@@ -13,3 +13,5 @@
 - Zenn [@e_chan1007](https://zenn.dev/e_chan1007)
 
 ※ GitHub のみ `@e-chan1007` (ハイフンで接続) となっています。
+
+![](https://raw.githubusercontent.com/e-chan1007/e-chan1007/main/github-metrics.svg)
