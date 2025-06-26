@@ -1,7 +1,7 @@
 name: Metrics
 on:
   # Schedule daily updates
-  schedule: [{ cron: "0 15 * * *" }]
+  schedule: [{ cron: "0 18 * * *" }]
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
@@ -12,10 +12,9 @@ jobs:
     steps:
       - uses: lowlighter/metrics@master
         with:
+          filename: metrics.languages.svg
+          base: ""
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          plugin_notable: no
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_sections: most-used, recently-used
           plugin_languages_recent_load: 1000
