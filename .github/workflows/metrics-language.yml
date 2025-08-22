@@ -21,4 +21,4 @@ jobs:
           plugin_languages_recent_days: 30
           plugin_languages_ignored: >-
             tex, dockerfile, jupyter notebook, markdown, mdx,
-            makefile, shell, powershell, gnuplot, bibtex
+            makefile, shell, powershell, gnuplot, bibtex, bibtex style
